@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unhas da Laryssa</title>
+
+<style>
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* BODY */
+body {
+    background-color: #fff5fa;
+    color: #000;
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #ffb6d5, #ff8fc4);
+    text-align: center;
+    padding: 40px 20px;
+    color: white;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* SECTIONS */
+section {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* TITULOS */
+h2 {
+    text-align: center;
+    color: #d63384;
+    margin-bottom: 25px;
+    font-size: 2.1rem;
+}
+
+h3 {
+    text-align: center;
+    color: #c2185b;
+    margin: 25px 0 10px;
+    font-size: 1.6rem;
+}
+
+/* DESCRIÇÃO DAS CATEGORIAS */
+.desc-categoria {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    text-align: center;
+    background: #ffffff;
+    padding: 18px;
+    border-radius: 20px;
+    font-size: 1.05rem;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.07);
+}
+
+/* LINHA DIVISÓRIA */
+.divisor {
+    width: 80%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #ff6fae, transparent);
+    margin: 40px auto;
+    border-radius: 50px;
+}
+
+/* GRID */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+    margin-bottom: 15px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    border-radius: 24px;
+    padding: 20px 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+/* IMAGEM */
+.card img {
+    width: 100%;
+    max-width: 160px;
+    border-radius: 18px;
+    margin: 0 auto 12px;
+    display: block;
+}
+
+/* TEXTO */
+.card p {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+/* BOTÃO WHATS */
+.btn-whats {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 160px;
+    height: 44px;
+    padding: 0 18px;
+    margin: 12px auto 0;
+    background: linear-gradient(15deg, #ff6fae, #ff3f92);
+    color: white;
+    text-decoration: none;
+    border-radius: 18px;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* BOTÃO CENTRAL */
+.btn-central {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* VALORES */
+.valores ul {
+    list-style: none;
+    max-width: 520px;
+    margin: auto;
+}
+
+.valores li {
+    background: white;
+    margin-bottom: 14px;
+    padding: 18px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1.15rem;
+    box-shadow: 0 9px 15px rgba(0,0,0,0.08);
+}
+
+/* INFO */
+.info p {
+    text-align: center;
+    background: white;
+    padding: 25px;
+    border-radius: 22px;
+    max-width: 720px;
+    margin: auto;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* FOOTER */
+footer {
+    background: linear-gradient(135deg, #ffd3e8, #ff6fae);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.btn-footer {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 12px 24px;
+    background: white;
+    color: #ff3f92;
+    border-radius: 22px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+    body {
+        font-size: 18px;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .btn-whats {
+        width: 90%;
+        max-width: 280px;
+        font-size: 1rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Unhas da Laryssa</h1>
+    <p>Alongamento em gel e pinturas simples 💖</p>
+</header>
+
+<section class="catalogo">
+<h2>Catálogo de serviços</h2>
+
+<h3>Simples e Delicado</h3>
+<div class="desc-categoria">
+Modelos ideais para quem gosta de unhas discretas, delicadas e elegantes.
+Perfeitas para o dia a dia, escola ou trabalho, mantendo um visual limpo e natural.
+</div>
+
+<div class="cards">
+    <div class="card">
+        <img src="imagens/unha1.jpeg">
+        <p>Alongamento em gel simples, sem pintura</p>
+        <a class="btn-whats" href="https://wa.me/5511915641761" target="_blank">Agendar</a>
+    </div>
+</div>
+
+<div class="divisor"></div>
+
+<h3>Desenho Simples</h3>
+<div class="desc-categoria">
+Unhas com pequenos detalhes, como francesinhas, corações ou desenhos delicados.
+Ótimas para quem quer algo fofo e personalizado, sem exagerar.
+</div>
+
+<div class="cards">
+    <div class="card">
+        <img src="imagens/unha2.jpeg">
+        <p>Francesinha com desenho simples</p>
+        <a class="btn-whats" href="https://wa.me/5511915641761" target="_blank">Falar sobre</a>
+    </div>
+</div>
+
+<div class="divisor"></div>
+
+<h3>Pintura Simples</h3>
+<div class="desc-categoria">
+Unhas com cores lisas ou combinações básicas, trazendo elegância e praticidade.
+Indicadas para quem gosta de algo bonito, mas sem muitos detalhes.
+</div>
+
+<div class="cards">
+    <div class="card">
+        <img src="imagens/unha3.jpeg">
+        <p>Preta com francesinha branca</p>
+    </div>
+    <div class="card">
+        <img src="imagens/unha5.jpeg">
+        <p>Francesinha com glitter</p>
+    </div>
+</div>
+
+<div class="btn-central">
+    <a class="btn-whats" href="https://wa.me/5511915641761" target="_blank">
+        Agendar pintura simples
+    </a>
+</div>
+
+<div class="divisor"></div>
+
+<h3>Festa</h3>
+<div class="desc-categoria">
+Modelos mais chamativos, com brilho e detalhes especiais.
+Ideais para festas, eventos, datas comemorativas ou quando você quer se destacar.
+</div>
+
+<div class="cards">
+    <div class="card">
+        <img src="imagens/unha4.jpeg">
+        <p>Unhas com brilho artístico</p>
+    </div>
+    <div class="card">
+        <img src="imagens/unha6.jpeg">
+        <p>Detalhes elegantes com acabamento especial</p>
+    </div>
+</div>
+
+<div class="btn-central">
+    <a class="btn-whats" href="https://wa.me/5511915641761" target="_blank">
+        Falar sobre unhas de festa
+    </a>
+</div>
+
+</section>
+
+<section class="valores">
+<h2>Valores</h2>
+<ul>
+    <li>💅 Alongamento em gel: <strong>R$ 30 a R$ 40</strong></li>
+    <li>🎨 Pintura simples: incluso</li>
+    <li>🖌️ Desenhos simples: valor combinado</li>
+    <li>✨ Festa: valor combinado</li>
+    <li>🚗 Transporte: conforme distância</li>
+</ul>
+</section>
+
+<section class="info">
+<h2>Informações importantes</h2>
+<p>
+• Atendimento em fase inicial<br>
+• Modelos simples no momento<br>
+• Atendimento apenas com horário marcado
+</p>
+</section>
+
+<footer>
+<p>📲 Agendamentos pelo WhatsApp</p>
+<a class="btn-footer" href="https://wa.me/5511915641761" target="_blank">
+Entrar em contato
+</a>
+</footer>
+
+</body>
+</html>

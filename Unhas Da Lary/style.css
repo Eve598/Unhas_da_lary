@@ -1,0 +1,217 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* BODY */
+body {
+    background-color: #fff5fa;
+    color: #000;
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #ffb6d5, #ff8fc4);
+    text-align: center;
+    padding: 40px 20px;
+    color: white;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+}
+
+/* SECTIONS */
+section {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* TITULOS */
+h2 {
+    text-align: center;
+    color: #d63384;
+    margin-bottom: 30px;
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+
+h3 {
+    text-align: center;
+    color: #c2185b;
+    margin: 30px 0 15px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* SOBRE */
+.sobre p {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.7;
+    background: white;
+    padding: 25px;
+    border-radius: 22px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    font-size: 1.15rem;
+    color: #000;
+}
+
+/* GRID DE CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+    margin-top: 10px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    border-radius: 24px;
+    padding: 20px 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+/* IMAGEM */
+.card img {
+    width: 100%;
+    max-width: 160px;
+    height: auto;
+    border-radius: 18px;
+    margin: 0 auto 12px;
+    display: block;
+}
+
+/* TEXTO CARD */
+.card p {
+    font-size: 1.15rem;
+    margin-bottom: 14px;
+    line-height: 1.5;
+    color: #000;
+}
+
+/* BOTÃO WHATS */
+.btn-whats {
+    display: block;
+    top: 80px;
+    width: 100px;
+    padding: -4px 0;   /* ⬅ diminui a altura */
+    margin: 10px auto;
+    background: linear-gradient(15deg, #ff6fae, #ff3f92);
+    color: white;
+    text-decoration: none;
+    border-radius: 16px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+
+/* VALORES */
+.valores ul {
+    list-style: none;
+    max-width: 520px;
+    margin: auto;
+}
+
+.valores li {
+    background: white;
+    margin-bottom: 14px;
+    padding: 18px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1.15rem;
+    color: #000;
+    box-shadow: 0 9px 15px rgba(0,0,0,0.08);
+}
+
+/* INFO */
+.info p {
+    text-align: center;
+    background: white;
+    padding: 25px;
+    border-radius: 22px;
+    max-width: 720px;
+    margin: auto;
+    line-height: 1.7;
+    font-size: 1.15rem;
+    color: #000;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* FOOTER */
+footer {
+    background: linear-gradient(135deg, #ffd3e8, #ff6fae);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+footer p {
+    font-size: 1.1rem;
+}
+
+.btn-footer {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 10px 22px;
+    background: white;
+    color: #ff3f92;
+    border-radius: 22px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+/* RESPONSIVO */
+@media (max-width: 480px) {
+    body {
+        font-size: 18px;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    header p {
+        font-size: 1.1rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    .card img {
+        max-width: 140px;
+    }
+}
